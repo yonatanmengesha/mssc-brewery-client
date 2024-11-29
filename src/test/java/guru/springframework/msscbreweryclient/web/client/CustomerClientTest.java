@@ -28,7 +28,7 @@ class CustomerClientTest {
     @Test
     void saveNewCustomer() {
 
-        CustomerDto customerDto = CustomerDto.builder().name("Jhon Z").build();
+        CustomerDto customerDto = CustomerDto.builder().customerName("Jhon Z").build();
         URI uri=  client.saveNewCustomer(customerDto);
 
         assertNotNull(uri);
@@ -38,7 +38,7 @@ class CustomerClientTest {
 
     @Test
     void updateCustomerById() {
-        CustomerDto customerDto = CustomerDto.builder().name("Yonatan").build();
+        CustomerDto customerDto = CustomerDto.builder().customerName("Yonatan").build();
         client.updateCustomerById(UUID.randomUUID(),customerDto);
     }
 

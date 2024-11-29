@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Null;
 import java.util.UUID;
 
 /**
@@ -15,7 +17,6 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class CustomerDto {
-
     private UUID id;
-    private String name;
+    private String customerName;
 }

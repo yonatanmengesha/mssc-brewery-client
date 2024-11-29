@@ -38,15 +38,8 @@ public class BreweryClient {
 
     public void deleteBeer(UUID uuid){
 
-        restTemplate.delete(apihost+BEER_PATH_V1+"/"+uuid);
+        restTemplate.delete(apihost+BEER_PATH_V1+uuid);
     }
-    public void setApiHost(String apihost) {
-
-        this.apihost = apihost;
-    }
-
-
-
 
     public CustomerDto getCustomerById(UUID customerId){
 
@@ -55,7 +48,8 @@ public class BreweryClient {
 
     public URI  saveNewCustomer(CustomerDto customerDto){
 
-        return restTemplate.postForLocation(apihost+CUSTOMER_PATH_V1,customerDto);
+        return restTemplate.postForLocation(apihost
+                +CUSTOMER_PATH_V1,customerDto);
     }
 
     public void updateCustomerById(UUID customerId, CustomerDto customerDto){
@@ -67,4 +61,10 @@ public class BreweryClient {
 
         restTemplate.delete(apihost+CUSTOMER_PATH_V1+customerId);
     }
+
+    public void setApiHost(String apihost) {
+
+        this.apihost = apihost;
+    }
+
 }
