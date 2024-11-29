@@ -1,5 +1,6 @@
 package guru.springframework.msscbreweryclient.web.client;
 
+
 import guru.springframework.msscbreweryclient.web.model.BeerDto;
 import guru.springframework.msscbreweryclient.web.model.CustomerDto;
 import org.junit.jupiter.api.Test;
@@ -10,6 +11,14 @@ import java.net.URI;
 import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+/*
+
+        Developed by YM
+
+ */
+
+
 @SpringBootTest
 class BreweryClientTest {
     @Autowired
