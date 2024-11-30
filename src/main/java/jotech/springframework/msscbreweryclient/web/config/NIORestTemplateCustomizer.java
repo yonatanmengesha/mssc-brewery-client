@@ -1,4 +1,4 @@
-package guru.springframework.msscbreweryclient.web.config;
+package jotech.springframework.msscbreweryclient.web.config;
 
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.nio.client.CloseableHttpAsyncClient;

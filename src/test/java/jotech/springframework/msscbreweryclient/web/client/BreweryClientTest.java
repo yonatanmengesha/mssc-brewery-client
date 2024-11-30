@@ -1,8 +1,8 @@
-package guru.springframework.msscbreweryclient.web.client;
+package jotech.springframework.msscbreweryclient.web.client;
 
 
-import guru.springframework.msscbreweryclient.web.model.BeerDto;
-import guru.springframework.msscbreweryclient.web.model.CustomerDto;
+import jotech.springframework.msscbreweryclient.web.model.BeerDto;
+import jotech.springframework.msscbreweryclient.web.model.CustomerDto;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
